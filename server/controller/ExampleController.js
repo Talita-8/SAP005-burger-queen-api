@@ -4,5 +4,5 @@ const data = require('./data.json')
 const getAllExamples = (req, res) => { 
   res.send(data)
 }
-
+//test
 module.exports = { getAllExamples }
