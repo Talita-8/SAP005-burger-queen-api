@@ -5,11 +5,6 @@ const port = 3000
 
 app.use('/', routes);
 
-
-app.get('/login/:user/:email/:role', (req, res) => {
-  res.send("Welcome, " + req.params.user)
-})
-
 app.get('*', (req, res) => {
   res.send('Hello World!')
 })

@@ -1,8 +1,8 @@
 // aqui vai o código que acessa o banco de dados
+const data = require('./data.json')
 
-const getAllExamples = (req, res) => {
-  console.log("Bora testar")
-  res.send("Request feita")
+const getAllExamples = (req, res) => { 
+  res.send(data)
 }
 
-module.exports = { getAllExamples } 
+module.exports = { getAllExamples }
