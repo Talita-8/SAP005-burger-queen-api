@@ -4,8 +4,7 @@
   "description": "## 1. Preâmbulo",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "create": "nodemon teste.js"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +22,9 @@
     "path": "^0.12.7",
     "pg": "^8.5.1",
     "pg-hstore": "^2.3.3",
-    "sequelize": "^6.5.1",
+    "sequelize": "^6.5.1"
+  },
+  "devDependencies": {
     "sequelize-cli": "^6.2.0"
   }
 }
