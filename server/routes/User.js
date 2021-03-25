@@ -3,7 +3,7 @@ const Controller = require('../controller/UserController')
 
 const router = Router()
 
-router.post("/", Controller.userMethods.register)
+router.post("/", Controller.userMethods.createUser)
 router.get("/", Controller.userMethods.allUsers)
 router.get("/:id", Controller.userMethods.userId)
 router.put("/:id", Controller.userMethods.userUpdate)

@@ -1,8 +1,8 @@
 const db = require("../db/models");
 
 const userMethods = {
-  
-  register: async (req, res) => {
+
+  createUser: async (req, res) => {
     const userItens = req.body;
     try {
       const user = await db.User.create({
@@ -67,7 +67,7 @@ const userMethods = {
     } catch (error) {
       console.log("Ops, houve algum erro.", error);
     }
-  },
+  }
 };
 
 module.exports = { userMethods };
