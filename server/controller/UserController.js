@@ -3,12 +3,12 @@ const db = require("../db/models");
 const userMethods = {
 
   createUser: async (req, res) => {
-    const userItens = req.body;
+    const { name, email, password, role, restaurant } = req.body;
     try {
       const user = await db.User.create({
-        userItens,
+        name, email, password, role, restaurant
       });
-      res.send(user);
+      res.json(user);
     } catch (error) {
       console.log("Ops, houve algum erro.", error);
     }
@@ -21,7 +21,7 @@ const userMethods = {
           exclude: ["password"],
         },
       });
-      res.send(allUsers);
+      res.json(allUsers);
     } catch (error) {
       console.log("Ops, houve algum erro.", error);
     }
