@@ -1,14 +1,17 @@
 const db = require("../db/models");
 
 const userMethods = {
-
   createUser: async (req, res) => {
-    const { name, email, password, role, restaurant } = req.body;
     try {
+      const { name, email, password, role, restaurant } = req.body;
       const user = await db.User.create({
-        name, email, password, role, restaurant
+        name,
+        email,
+        password,
+        role,
+        restaurant,
       });
-      res.json(user);
+      res.status(201).json(user);
     } catch (error) {
       console.log("Ops, houve algum erro.", error);
     }
@@ -21,7 +24,7 @@ const userMethods = {
           exclude: ["password"],
         },
       });
-      res.json(allUsers);
+      res.status(200).json(allUsers);
     } catch (error) {
       console.log("Ops, houve algum erro.", error);
     }
@@ -35,7 +38,7 @@ const userMethods = {
           id: id,
         },
       });
-      res.send(user);
+      res.status(200).json(user);
     } catch (error) {
       console.log("Ops, houve algum erro.", error);
     }
@@ -44,12 +47,20 @@ const userMethods = {
   userUpdate: async (req, res) => {
     const userId = req.params.id;
     try {
-      const user = await db.User.findAll({
-        where: {
-          id: userId,
+      const user = await db.User.update(
+        {
+          name: req.body.name,
+          email: req.body.email,
+          password: req.body.password,
+          role: req.body.role,
         },
-      });
-      res.send(user);
+        {
+          where: {
+            id: userId,
+          },
+        }
+      );
+      res.send("Dados atualizados!");
     } catch (error) {
       console.log("Ops, houve algum erro.", error);
     }
@@ -58,16 +69,16 @@ const userMethods = {
   userDelete: async (req, res) => {
     const userId = req.params.id;
     try {
-      const user = await db.User.destroy({
+      await db.User.destroy({
         where: {
           id: userId,
         },
       });
-      res.send(user);
+      res.send("Usuário excluído com sucesso!");
     } catch (error) {
       console.log("Ops, houve algum erro.", error);
     }
-  }
+  },
 };
 
 module.exports = { userMethods };
