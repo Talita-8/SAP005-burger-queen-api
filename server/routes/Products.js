@@ -9,4 +9,4 @@ router.get("/:id", Controller.productsMethods.productId)
 router.put("/:id", Controller.productsMethods.productUpdate)
 router.delete("/:id", Controller.productsMethods.productDelete)
 
-module.exports = router 
+module.exports = router  
