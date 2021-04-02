@@ -1,7 +1,6 @@
 const db = require("../db/models");
 
 const ordersMethods = {
-  
   createOrders: async (req, res) => {
     const { products } = req.body;
 
@@ -9,7 +8,7 @@ const ordersMethods = {
       const findProductOrder = await Promise.all(
         products.map(async (product) => {
           if (!product) {
-            return res.status(404).json("Produto não encontrado")
+            return res.status(404).json("Produto não encontrado");
           }
           const qtd = product.qtd;
 
