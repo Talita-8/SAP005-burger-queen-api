@@ -7,7 +7,7 @@ app.use(express.json());
 app.use("/", routes);
 
 app.get("*", (req, res) => {
-  res.send("Hello World!");
+  res.send("Tartaria Burger API");
 });
 
 app.listen(port, () => {
