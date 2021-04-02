@@ -13,7 +13,7 @@ const userMethods = {
       });
       res.status(201).json(user);
     } catch (error) {
-       return res.status(400).json({ message: error.message });
+      return res.status(400).json({ message: error.message });
     }
   },
 
@@ -26,7 +26,7 @@ const userMethods = {
       });
       res.status(200).json(allUsers);
     } catch (error) {
-       return res.status(400).json({ message: error.message });
+      return res.status(400).json({ message: error.message });
     }
   },
 
@@ -40,7 +40,7 @@ const userMethods = {
       });
       res.status(200).json(user);
     } catch (error) {
-       return res.status(400).json({ message: error.message });
+      return res.status(400).json({ message: error.message });
     }
   },
 
@@ -62,7 +62,7 @@ const userMethods = {
       );
       res.send("Dados atualizados!");
     } catch (error) {
-       return res.status(400).json({ message: error.message });
+      return res.status(400).json({ message: error.message });
     }
   },
 
@@ -76,7 +76,7 @@ const userMethods = {
       });
       res.send("Usuário excluído com sucesso!");
     } catch (error) {
-       return res.status(400).json({ message: error.message });
+      return res.status(400).json({ message: error.message });
     }
   },
 };
