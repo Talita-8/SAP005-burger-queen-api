@@ -4,13 +4,7 @@
 
 * [1. Sobre](#1-Sobre)
 * [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-* [4. Considerações gerais](#4-considerações-gerais)
-* [5. Critérios de aceitação do projeto](#5-critérios-de-aceitação-do-projeto)
-* [6. Entrega](#6-entrega)
-* [7. Primeiros Passos](#7-primeiros-passos)
-* [8. HTTP API Checklist](#8-http-api-checklist)
-* [9. Hacker Edition](#9-hacker-edition)
+*
 
 ## 1. Sobre
 
