@@ -29,7 +29,7 @@ Aqui foi desenvolvida uma API com a mesma estrutura, inspirada nos dados acima m
 Utilizei como ferramenta para organização o Github projects, associando cada tarefa a seu respectivo pull request. O modelo que escolhi foi o Kanban básico. 
 ![githubprojects](https://user-images.githubusercontent.com/71895567/113442071-bafe4b00-93c5-11eb-817f-ced4b89174f0.png)
 
-Foi preciso também um fluxograma que representasse visualmente o banco de dados, facilitando o desenvolvimento da estrutura.
+O diagrama a seguir representa visualmente a estrutura do banco de dados.
 ![Fluxogrma_banco](https://user-images.githubusercontent.com/71895567/113442477-7fb04c00-93c6-11eb-959a-74e0d87eda94.png)
 
 
