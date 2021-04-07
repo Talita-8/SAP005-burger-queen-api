@@ -57,6 +57,7 @@ const ordersMethods = {
   allOrders: async (req, res) => {
     try {
       let allOrders = await db.Orders.findAll({
+        order: [['id', 'ASC']],
         include: {
           model: db.Products,
           as: "products",
@@ -116,6 +117,11 @@ const ordersMethods = {
     const id = req.params.id;
     try {
       await db.Orders.destroy({
+        where: {
+          id: id,
+        },
+      });
+      await db.ProductsOrders.destroy({
         where: {
           id: id,
         },
