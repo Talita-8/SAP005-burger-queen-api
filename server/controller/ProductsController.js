@@ -21,7 +21,9 @@ const productsMethods = {
 
   allProducts: async (req, res) => {
     try {
-      const allProducts = await db.Products.findAll({});
+      const allProducts = await db.Products.findAll({
+        order: [['id', 'ASC']]
+      });
       res.status(200).json(allProducts);
     } catch (error) {
       return res.status(400).json({ message: error.message });
