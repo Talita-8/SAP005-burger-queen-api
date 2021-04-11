@@ -4,7 +4,6 @@
 
 * [1. Sobre](#1-Sobre)
 * [2. Resumo do projeto](#2-resumo-do-projeto)
-*
 
 ## 1. Sobre
 
