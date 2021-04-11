@@ -7,7 +7,7 @@ app.use(express.json());
 app.use("/", routes);
 
 app.get("*", (req, res) => {
-  res.send("Tartaria Burger API");
+  res.send("Tartaria Burger API - Desenvolvido por Talita Silva");
 });
 
 app.listen(port, () => {
