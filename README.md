@@ -20,7 +20,8 @@ Ao longo deste, utilizei para desenvolvê-lo:
 ![ezgif com-video-to-gif (1)](https://user-images.githubusercontent.com/71895567/113440624-2bf03380-93c3-11eb-9965-e7aa7a49ce56.gif)
 
 No projeto anterior, nós consumimos uma API com dados relacionados de um restaurante, eram eles: Usuário|Produtos|Pedidos
-Aqui foi desenvolvida uma API com a mesma estrutura, inspirada nos dados acima mencionados.
+Foi desenvolvida uma API com a mesma estrutura, inspirada nos dados acima mencionados.
+Deploy: https://tartaria-api.herokuapp.com/
 
 ## 2. Resumo do projeto
 
